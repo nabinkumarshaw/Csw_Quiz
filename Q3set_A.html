@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container1, .container2,.container3{
+        text-align: center;
+    }
+    .container1{
+        position: relative;
+        right:100px;
+    }
+    .container2{
+        color: white;
+        position: relative;
+        top:20px;
+    }
+    .container3{
+        position: relative;
+        top:60px;
+        right: 45px;
+        
+    }
+    .par{
+        width:300px;
+        height:300px;
+        border:2px solid black;
+        position: absolute;
+        left:480px;
+        background-color: black;
+        opacity:0.5;
+    }
+    .child{
+        width:200px;
+        height:200px;
+        border:2px solid black;
+        position: relative;
+        left:40px;
+        background-color: grey;
+    }
+    .grandchild{
+        width:100px;
+        height:100px;
+        border:2px solid black;
+        position: absolute;
+        left:60px;
+        top: 20px;
+        background-color: wheat;
+    }
+</style>
+<body>
+    <div class="container1">Parent
+        <div class="par">
+            <div class="container2">Child
+                <div class="child">
+                    <div class="container3">Grandchild
+                        <div class="grandchild"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

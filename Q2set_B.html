@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".btn").click(function(){
+            $(".div1").animate({
+                left:'500px'
+            },3000);
+            $(".div2").animate({
+                left:'500px'
+            },2000);
+            $(".div3").animate({
+                left:'500px'
+            },1000);
+        });
+    });
+</script>
+</head>
+<body>
+    <button class="btn">Begin Animation</button>
+    <br><br>
+    <div class="div1" style="height:100px; width:100px; background-color:black;opacity:1; position:relative"></div>
+    <br>
+    <div class="div2" style="height:100px; width:100px; background-color:black;opacity:0.8; position:relative"></div>
+    <br>
+    <div class="div3" style="height:100px; width:100px; background-color:black;opacity:0.4; position:relative"></div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                $(".tab1").toggle();
+            })
+            $(".btn2").click(function(){
+                $(".tab2").toggle();
+            })
+        })
+    </script>
+    <style>
+        form{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to institute of Innovation Design and Research</h1>  
+    <button class="btn1">Would you like to purse Master Programme</button>
+    <br><br>
+    <button class="btn2">Would you like to purseb ph.D</button> 
+    <br><br>
+    <form class="tab1">
+        <label for="name">First Name:</label>
+        <input type="text" id="name">
+        <br><br>
+        <label for="pass">password:</label>
+        <input type="password" id="pass">
+        <br><br>
+        gender:
+        <input type="radio" id="male" name="gen" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gen" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="oth" name="gen" value="other">
+        <label for="oth">others</label>
+        <br><br>
+    </form>
+    <br><br>
+    <form class="tab2">
+        <label for="name">First Name:</label>
+        <input type="text" id="name">
+        <br><br>
+        <label for="pass">password:</label>
+        <input type="password" id="pass">
+        <br><br>
+        gender:
+        <input type="radio" id="male" name="gen" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gen" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="oth" name="gen" value="other">
+        <label for="oth">others</label>
+        <br><br>
+    </form>
+</body>
+</html>
